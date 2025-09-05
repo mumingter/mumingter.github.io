@@ -23,24 +23,8 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: [
           {
-            key: "Access-Control-Allow-Origin",
-            value: "https://mumingter.com",
-          },
-          {
-            key: "Access-Control-Allow-Methods",
-            value: "GET",
-          },
-          {
-            key: "Access-Control-Allow-Headers",
-            value: "Content-Type, Authorization",
-          },
-          {
-            key: "X-DNS-Prefetch-Control",
-            value: "on",
-          },
-          {
             key: "X-Frame-Options",
-            value: "SAMEORIGIN",
+            value: "DENY",
           },
           {
             key: "X-Content-Type-Options",
@@ -48,7 +32,11 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Referrer-Policy",
-            value: "origin-when-cross-origin",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "geolocation=(), microphone=(), camera=()",
           },
         ],
       },
@@ -64,7 +52,8 @@ export default withSentryConfig(nextConfig, {
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
   org: "mumingter",
-  project: "mumingter",
+  project: "mumingter-github-io",
+  sentryUrl: "https://sentry.io/",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
