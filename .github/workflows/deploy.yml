@@ -43,6 +43,9 @@ jobs:
         run: yarn install
 
       - name: Generate types
+        env:
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
         run: yarn typegen
 
       - name: Build project
