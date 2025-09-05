@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Logo = ({
   className,
@@ -11,20 +12,24 @@ const Logo = ({
 }) => {
   if (variant === "icon") {
     return (
-      <img 
+      <Image 
         src="/logo.jpg" 
         alt="Logo" 
         className={className}
         style={{ objectFit }}
+        width={100}
+        height={100}
       />
     );
   }
   return (
-    <img 
+    <Image 
       src="/logo.jpg" 
       alt="Logo" 
       className={className}
       style={{ objectFit }}
+      width={200}
+      height={100}
     />
   );
 };
