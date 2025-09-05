@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #055195;
+  --secondary: #C4D6B0;
+  --accent: #E53D00;
+  --foreground: #080708;
+  --background: #FFFFFF;
+  --foreground-muted: #404040;
+  --radius: 0.5rem;
+
+  /* Scroll Bar */
+  --sb-track-color: var(--background);
+  --sb-thumb-color: var(--primary);
+  --sb-size: 5px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins);
+  line-height: 130%;
+}
+p, span {
+  line-height: 150%;
+}
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 2px;
+}
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+@layer base {
+  .h1 {
+    @apply text-[61px] leading-[130%] text-foreground;
+  }
+  .h2 {
+    @apply text-[49px] leading-[130%] text-foreground;
+  }
+  .h3 {
+    @apply text-[39px] leading-[130%] text-foreground;
+  }
+  .h4 {
+    @apply text-[31px] leading-[130%] text-foreground;
+  }
+  .h5 {
+    @apply text-[25px] leading-[130%] text-foreground;
+  }
+  .h6 {
+    @apply text-[20px] leading-[130%] text-foreground;
+  }
+  .p {
+    @apply text-[16px] leading-[150%] break-words text-ellipsis text-foreground-muted;
+  }
+  .span {
+    @apply leading-[150%] text-foreground-muted;
+  }
+  .small {
+    @apply text-[13px] leading-[150%] text-foreground-muted;
+  }
+  .caption {
+    @apply text-[10px] leading-[150%] text-foreground-muted;
+  }
+}
+
+@layer components {
+  .header {
+    @apply fixed top-0 w-full bg-background z-[998] border-b border-neutral-300;
+  }
+  .inner-header {
+    @apply flex justify-between items-center h-full w-full;
+  }
+  .hero {
+    @apply w-full mt-[90px];
+  }
+  .about {
+    @apply w-full;
+  }
+  .benefits {
+    @apply w-full bg-primary-50 min-h-[500px] h-fit flex flex-col justify-center items-center;
+  }
+  .aboutus {
+    @apply w-full h-fit;
+  }
+  .services {
+    @apply w-full h-fit;
+  }
+  .section-heading {
+    @apply flex flex-col justify-center items-start;
+  }
+  .herowithbreadcrumb {
+    @apply mt-[90px];
+  }
+  .footer {
+    @apply w-full bg-primary-800 h-fit;
+  }
+}
+
+@layer utilities {
+  .layout {
+    @apply w-full max-w-screen-2xl mx-auto px-5 py-[50px] md:p-[50px] lg:p-[70px] overflow-hidden;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}

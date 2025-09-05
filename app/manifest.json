@@ -1,0 +1,21 @@
+{
+  "name": "Mumingter",
+  "short_name": "Mumingter",
+  "icons": [
+    {
+      "src": "/wechat.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/green-scaled.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
