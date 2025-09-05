@@ -34,7 +34,7 @@
     "lint": "next lint",
     "prebuild": "yarn run typegen",
     "predev": "yarn run typegen",
-    "typegen": "sanity schema extract --enforce-required-fields --path=./sanity/extract.json --project-id=94q06g8g --dataset=production || true && sanity typegen generate",
+    "typegen": "sanity schema extract --enforce-required-fields --path=./sanity/extract.json || sanity typegen generate",
     "export": "next export",
     "deploy": "yarn run build && yarn run export && gh-pages -d out"
   },
