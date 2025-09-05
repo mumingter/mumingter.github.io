@@ -58,7 +58,9 @@ jobs:
           NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
           NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
           NEXT_PUBLIC_SANITY_API_VERSION: ${{ secrets.SANITY_API_VERSION }}
-        run: yarn typegen
+        run: |
+          touch ./sanity/extract.json
+          yarn typegen
 
       - name: Build project
         run: yarn build
