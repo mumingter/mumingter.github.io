@@ -56,7 +56,7 @@ const socialLinks: SocialLink[] = [
   {
     icon: <GoogleMaps className="aspect-square" />,
     name: "Google Maps",
-    href: "https://www.google.com/maps/place/Far+East+Finance+Building/@1.2820124,103.8501458,19z/data=!3m1!5s0x31da177b7280585d:0x630491f32506cf33!4m15!1m8!3m7!1s0x31da190e80fc602f:0x72001abb75a9ab1b!2sFar+East+Finance+Building!8m2!3d1.2820124!4d103.8507909!10e1!16s%2Fg%2F11c1wynrlk!3m5!1s0x31da190e80fc602f:0x72001abb75a9ab1b!8m2!3d1.2820124!4d103.8507909!16s%2Fg%2F11c1wynrlk?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D",
+    href: "https://www.google.com/maps/place/The+Plaza/@1.2995735,103.8577115,17.25z/data=!3m1!5s0x31da19cb74849851:0xf2fa3952cd1a6c56!4m6!3m5!1s0x31da19b1c7ff1ef5:0xd6bbfc39eaed8804!8m2!3d1.299739!4d103.860815!16s%2Fm%2F04047mz?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 const stickyScrollData = [
@@ -94,11 +94,7 @@ const actionButtons: ActionButton[] = [
 ]
 
 export {
-  navData,
-  statsData,
-  benefits,
-  socialLinks,
-  stickyScrollData,
   // services,
-  actionButtons
+  actionButtons, benefits, navData, socialLinks, statsData, stickyScrollData
 };
+
