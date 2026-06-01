@@ -1,9 +1,10 @@
 import { statsData } from "@/lib/data";
+import React from "react";
 import SectionHeading from "./SectionHeading";
 import Stats from "./Stats";
 const AboutUs = () => {
   return (
-    <>
+    <React.Fragment>
       <div className="layout grid grid-cols-1 gap-5 lg:grid-cols-[1fr_1fr]">
         <SectionHeading
           title="Mumingter"
@@ -12,7 +13,7 @@ const AboutUs = () => {
         />
         <div className="flex h-full flex-col gap-5">
           <iframe
-            src="https://www.google.com/maps/place/The+Plaza/@1.2995735,103.8577115,17.25z/data=!3m1!5s0x31da19cb74849851:0xf2fa3952cd1a6c56!4m6!3m5!1s0x31da19b1c7ff1ef5:0xd6bbfc39eaed8804!8m2!3d1.299739!4d103.860815!16s%2Fm%2F04047mz?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+            src="https://www.google.com/maps?q=The%20Plaza%2C%20Singapore&output=embed"
             loading="lazy"
             className="size-full"
             title="Muminter Location"
@@ -20,7 +21,7 @@ const AboutUs = () => {
           <Stats stats={statsData} />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
