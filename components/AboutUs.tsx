@@ -1,7 +1,6 @@
-import React from "react";
+import { statsData } from "@/lib/data";
 import SectionHeading from "./SectionHeading";
 import Stats from "./Stats";
-import { statsData } from "@/lib/data";
 
 const AboutUs = () => {
   return (
@@ -14,7 +13,7 @@ const AboutUs = () => {
         />
         <div className="flex h-full flex-col gap-5">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.788371976477!2d103.85741317481572!3d1.2839069989345173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da112b3435b5bb%3A0x5c5b92a59493590!2sFar%20East%20Finance%20Building!5e0!3m2!1sen!2ssg!4v1715740400507!5m2!1sen!2ssg"
+            src="https://www.google.com/maps/place/The+Plaza/@1.2995735,103.8577115,17.25z/data=!3m1!5s0x31da19cb74849851:0xf2fa3952cd1a6c56!4m6!3m5!1s0x31da19b1c7ff1ef5:0xd6bbfc39eaed8804!8m2!3d1.299739!4d103.860815!16s%2Fm%2F04047mz?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
             loading="lazy"
             className="size-full"
             title="Muminter Location"
