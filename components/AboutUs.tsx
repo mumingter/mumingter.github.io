@@ -1,7 +1,6 @@
 import { statsData } from "@/lib/data";
 import SectionHeading from "./SectionHeading";
 import Stats from "./Stats";
-
 const AboutUs = () => {
   return (
     <>
