@@ -1,7 +1,7 @@
+import { socialLinks } from "@/lib/data";
 import Link from "next/link";
 import Logo from "./Logo";
 import Socials from "./Socials";
-import { socialLinks } from "@/lib/data";
 const Footer = () => {
   return (
     <>
@@ -28,8 +28,8 @@ const Footer = () => {
                 <Link href="QQ:1810297072"> QQ:1810297072</Link>
               </li>
               <li>
-                <Link href="https://www.google.com/maps/place/Far+East+Finance+Building/@1.2820124,103.8482106,17z/data=!3m2!4b1!5s0x31da177b7280585d:0x630491f32506cf33!4m14!1m7!3m6!1s0x14cadd7659685b97:0x9f8ad867e6e6cc0e!2sReform+Marine!8m2!3d40.8183382!4d29.296018!16s%2Fg%2F11w3tk9ws3!3m5!1s0x31da190e80fc602f:0x72001abb75a9ab1b!8m2!3d1.2820124!4d103.8507909!16s%2Fg%2F11c1wynrlk?entry=ttu&g_ep=EgoyMDI1MDkwMi4wIKXMDSoASAFQAw%3D%3D">
-                  14 ROBINSON ROAD #08-01A FAR EAST FINANCE BUILDING S(048545)
+                <Link href="https://www.google.com/maps/place/The+Plaza/@1.299739,103.8582347,17z/data=!3m2!4b1!5s0x31da19cb74849851:0xf2fa3952cd1a6c56!4m6!3m5!1s0x31da19b1c7ff1ef5:0xd6bbfc39eaed8804!8m2!3d1.299739!4d103.860815!16s%2Fm%2F04047mz?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D">
+                  7500A BEACH ROAD, #04-311, THE PLAZA, SINGAPORE 199591
                 </Link>
               </li>
               <li>
